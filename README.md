@@ -1,2 +1,3 @@
 # PD-Front-End
-Front End Development workflow for EP-PD
+
+**[PD-Front-End](https://github.com/epworkplace/PD-Front-End)** is Front End Development workflow for Edit Place India.

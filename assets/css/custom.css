@@ -1,0 +1,51 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+body {
+   font-size: 12px;	
+   /*line-height: 1;*/
+}
+
+a {
+
+}
+.sidebar-menu { width: 220px;  } /* orginal was 280px */
+.pull_right_margin { margin-right: 2%; }
+
+.uk-htmleditor-fullscreen {
+    top: 85px !important;
+}
+.mail-env { margin-bottom:0px; min-height:450px; }
+.pager { position: relative; display: inline-block; margin:0; }
+.mail-pagination > .pager li > a, .mail-pagination > .pager li > span { padding: 0px 8px; }
+.user-info-navbar .user-info-menu > li .dropdown-menu.user-profile-menu li a, .navbar.horizontal-menu .navbar-inner > .nav > li .dropdown-menu.user-profile-menu li a { padding: 0px 0px 6px; }
+/* .sidebar-menu .main-menu a { text-transform: uppercase; } */
+.sidebar-menu .main-menu { padding-left: 10px; padding-right: 10px; margin-top: 10px; margin-bottom: 10px; list-style: outside none none; }
+.navbar.horizontal-menu .navbar-inner .navbar-brand { padding: 0px 7px; }
+.page-container .main-content .page-title { padding: 10px 0px; }
+.page-container .main-content .page-title .title-env .title { margin: 0px; font-size: 20px; }
+.user-name{ padding-bottom:5px; }
+.help-line-height { line-height: 1.5; }
+.dropdown-backdrop {
+	z-index: 0 !important;
+}
+/*Priyams Modification */
+.modal-backdrop.in{ position: fixed; }
+
+
+.modal-dialog{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	top: 0;
+	padding: 90px 0;
+}
+
+.modal-content{
+	width: 900px;
+	margin: 0 auto 90px
+	;
+}
