@@ -1,6 +1,6 @@
 // Links
 a {
-	
+
 	&:hover {
 		text-decoration: none;
 	}
@@ -18,12 +18,12 @@ label {
 // Dropdowns
 .dropdown-menu {
 	.box-shadow(none);
-	
+
 	> li {
-		
+
 		> a {
 			padding: 5px @base-margin;
-			
+
 			> i {
 				display: inline-block;
 				margin-right: @base-padding / 2;
@@ -33,10 +33,10 @@ label {
 }
 
 .left-dropdown {
-	
+
 	.btn {
 		float: right;
-		
+
 		&.dropdown-toggle {
 			float: left;
 		}
@@ -47,7 +47,7 @@ label {
 // Forms
 .form-control {
 	.box-shadow(none);
-	
+
 	&:focus, &:active {
 		outline: none;
 		.box-shadow(none);
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6,
 
 // Button Groups
 .btn-group {
-	
+
 	+ .btn-group {
 		margin-left: @base-padding/2;
 	}
@@ -74,22 +74,22 @@ h1, h2, h3, h4, h5, h6,
 
 // Alerts
 .alert {
-	
+
 	&.alert-dismissable {
 		padding-right: 20px;
-		
+
 		.close {
 			right: -10px;
 			top: 0px;
 		}
 	}
-	
+
 	.close {
 		position: relative;
 		margin-top: -2px;
 		outline: 0;
 		color: #000;
-		
+
 		span {
 			text-shadow: none;
 		}
@@ -98,21 +98,21 @@ h1, h2, h3, h4, h5, h6,
 	&.alert-default {
 	  .alert-variant(#eee; #eee; #333);
 	}
-	
+
 	&.alert-white {
 	  .alert-variant(#FFF; #eee; #333);
 	}
-	
+
 	&.alert-black {
 	  .alert-variant(#000; #000; #FFF);
-	  
+
 	  .close {
 		  .opacity(.5);
-		  
+
 		  span {
 			  color: #FFF;
 		  }
-		  
+
 		  &:hover {
 			  .opacity(.9);
 		  }
@@ -125,16 +125,16 @@ h1, h2, h3, h4, h5, h6,
 .progress {
 	height: 6px;
 	.box-shadow(none);
-	
+
 	&.progress-bar-purple > .progress-bar { .progress-bar-variant(@xe-purple); }
 	&.progress-bar-blue > .progress-bar { .progress-bar-variant(@xe-blue); }
 	&.progress-bar-red > .progress-bar { .progress-bar-variant(@xe-red); }
 	&.progress-bar-black > .progress-bar { .progress-bar-variant(@xe-black); }
 	&.progress-bar-gray > .progress-bar { .progress-bar-variant(#ccc); }
-	
+
 	.progress-bar {
 		.box-shadow(none);
-		
+
 		&.progress-bar-purple { .progress-bar-variant(@xe-purple); }
 		&.progress-bar-blue { .progress-bar-variant(@xe-blue); }
 		&.progress-bar-red { .progress-bar-variant(@xe-red); }
@@ -146,20 +146,20 @@ h1, h2, h3, h4, h5, h6,
 
 // List Groups
 .list-group {
-	
+
 	.list-group-item {
 		padding: @base-padding+5 @base-margin;
-		
+
 		.list-group-item-heading {
 		}
-		
+
 		.list-group-item-text {
 			margin-top: @base-padding;
 		}
 	}
-	
+
 	&.list-group-minimal {
-		
+
 		.list-group-item {
 			padding: @base-padding @base-padding+5;
 		}
@@ -281,17 +281,17 @@ pre {
 		padding-top: 0 !important;
 		padding-bottom: (@jumbotron-padding * 1.6);
 		margin-bottom: @base-margin;
-		
+
 		> h1 {
 			margin-top: 0;
 			margin-bottom: @base-margin;
 		}
-		
+
 		@media screen and (max-width: @screen-sm-min) {
 			padding-left: 0;
 			padding-right: 0;
 		}
-		
+
 		@media screen and (min-width: @screen-sm-min) {
 			padding-top:    (@jumbotron-padding * 0.5);
 		    padding-bottom: (@jumbotron-padding * 1.6);

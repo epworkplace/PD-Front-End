@@ -1,0 +1,149 @@
+/* helper utility styles */
+.helper-text {
+  font-size: 12px;
+
+  // text-transform: none !important;
+  color: $helper;
+  font-weight: 400;
+
+  &.text-01 {
+    font-size: 14px;
+  }
+
+  &.text-02 {
+    font-size: 13px;
+  }
+
+  &.text-03 {
+    font-size: 11px;
+  }
+
+  &.text-04 {
+    font-size: 10px;
+  }
+
+  [class$='by'] {
+    font-weight: 600;
+  }
+}
+
+/* .remove, .delete {
+  color: $delete;
+} */
+
+// Box modal styles
+
+// $dimensions: ('m': 'margin', 'p': 'padding');
+// $directions: ('t': 'top', 'b': 'bottom', 'r': 'right', 'l': 'left');
+// $responsive-breaks: 'xs, sm, md, lg';
+
+// @each $dim in $dimensions {
+//   @for $i from 0 through 6 {
+//     $size: $i * 5;
+
+//     .#{nth($dim, 1)}-#{$size} {
+//       #{nth($dim, 2)}: #{$size}px !important;
+//     }
+//   }
+
+//   @each $dir in $directions {
+//     @for $i from 0 through 6 {
+//       $size: $i * 5;
+
+//       .#{nth($dim, 1)}#{nth($dir, 1)}-#{$size} {
+//         #{nth($dim, 2)}-#{nth($dir, 2)}: #{$size}px !important;
+//       }
+//     }
+//   }
+// }
+
+// Heading styles
+
+
+// button with 48% styles
+
+
+// button styles ends
+
+.main-font {
+  font-size: 14px;
+  color: $main;
+  font-weight: 600;
+}
+
+.ln100 {
+  line-height: 100% !important;
+}
+
+.fw-normal {
+  font-weight: normal !important;
+}
+
+.fw600 {
+  font-weight: 600 !important;
+}
+
+.fw700 {
+  font-weight: 700 !important;
+}
+
+.text-none {
+  text-transform: none !important;
+}
+
+.primary-font {
+  font-size: 14px;
+  color: $sub-heading;
+}
+
+.sec-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: $main;
+}
+
+/* Text color styles */
+.error-text {
+  color: $delete !important;
+}
+
+.warning-text {
+  color: $validate !important;
+}
+
+/* .modal{
+  .alert-success, .alert-info, .alert-warning, .alert-danger{
+    color: #ffffff !important;
+  }
+} */
+
+.df-ac {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+}
+
+.df-ac-jc {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// full width
+.full-width {
+  width: 100% !important;
+}
+
+.auto-width {
+  width: auto !important;
+}
+
+.auto-height {
+  height: auto !important;
+}

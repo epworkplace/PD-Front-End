@@ -1,0 +1,208 @@
+/* font Colors */
+
+$body: #7d889a;
+$main: #353F53;
+$sub-heading: #485262;
+$helper: #B0B4BB;
+$selected: #448aff;
+$active: $selected;
+$cta-icons: #dfe1e3;
+
+/* Background-colors */
+
+$default-bg: #fec500;
+$main-panel-bg: #fafafa;
+$tab-panel-bg: #fcfdfd;
+$default-bg-hover: #cea000;
+$ongoning-bg: #11BFE3;
+$to-validate: #FFA534;
+$validate: #FF6F00;
+$closed: #78b414;
+$delete: #ee0a5f;
+$delete-hover: #b70a4a;
+$not-started: #9A9FA9;
+$paused: $main;
+$senior: #FB8C00;
+$junior: #3F51B5;
+$beginner: #388E3C;
+$yes: #69A1FF;
+$yes-hover: #447DF7;
+$no: #a9a9a9;
+$no-hover: $main;
+$disapprove: $delete;
+$disapprove-hover: #b70a4a;
+$rework: #f01716;
+$color-notify: #ee0a5f;
+$done: #1b2432;
+$delivered: #137d43;
+$completed: #2eb1ae;
+
+/* highligh colors */
+$highlight-01: #f3f5f7;
+$highlight-02: #dfe2e5;
+$highlight-03: #f7f9fa;
+$highlight-04: #ebeef0;
+$highlight-05: #f4f6f7;
+$highlight-06: #c2cad4;
+$highlight-07: #fbfbfc;
+
+/* dividers */
+$divider: #f5f5f6;
+$divider-02: #e6e9eb;
+$divider-03: #f1f1f3;
+
+/* border colors */
+$border-color: #D7D9DC;
+$border-color-02: #f6f6f7;
+
+/* Ranking colors */
+$rank-new: #9bca97;
+$rank-bronze: #b2393c;
+$rank-silver: #7dc9d5;
+$rank-gold: #f4b12d;
+$rank-elite: #164b8a;
+
+/**
+ * Sass Variables
+ * Social Media Brand Colors
+ */
+
+$amazon: #ff9900;
+$android: #a4c639;
+$apple: #a6b1b7;
+$deviantart: #05cc47;
+$discord: #7289da;
+$dribbble: #ea4c89;
+$facebook: #3b5998;
+$fivehundredpx: #0099e5;
+$flickrblue: #006add;
+$flickrpink: #f40083;
+$foursquareblue: #2d5be3;
+$foursquarenavy: #073282;
+$foursquarepink: #f94877;
+$googleblue: #4285f4;
+$googlegreen: #34a853;
+$googleplus: #db4437;
+$googlered: #ea4335;
+$googleyellow: #fbbc05;
+$instagramblue: #4c5fd7;
+$instagrammagenta: #c32aa3;
+$instagramorange: #f46f30;
+$instagrampurple: #7232bd;
+$instagramyellow: #ffdc7d;
+$linkedin: #007bb5;
+$listlyblue: #52b1b3;
+$listlyorange: #df6d46;
+$medium: #02b875;
+$microsoftblue: #03a5f0;
+$microsoftgreen: #80bb03;
+$microsoftred: #f35022;
+$microsoftyellow: #ffb903;
+$periscope: #40a4c4;
+$pinterest: #bd081c;
+$pocket: #ee4056;
+$quora: #aa2200;
+$quorablue: #2b6dad;
+$reddit: #ff5700;
+$skypeblue: #00aff0;
+$skypedkblue: #0078d7;
+$slackgreenblue: #1a937d;
+$slackmosss: #3eb890;
+$slackolive: #65863a;
+$slackpink: #e01765;
+$slackpurple: #4d394b;
+$slackred: #cc2027;
+$slackskyblue: #70cadb;
+$slackviolet: #472a49;
+$slackyellow: #e8a723;
+$slideshareblue: #00a0dc;
+$slideshareorange: #e68523;
+$snapchat: #fffc00;
+$soundcloud: #ff5500;
+$spotifydarkgreen: #1db954;
+$spotifygreen: #1ed760;
+$steam: #171a21;
+$stumbleupon: #e94826;
+$swarm: #ffa633;
+$tumblr: #2c4762;
+$twitter: #1da1f2;
+$vimeoblue: #1ab7ea;
+$vine: #00b489;
+$vk: #4a76a8;
+$whatsappgreen: #25d366;
+$whatsappteal1: #075e54;
+$whatsappteal2: #128c7e;
+$yahoo: #430297;
+$youtube: #ff0000;
+
+$social-media-colors:(
+amazon: $amazon,
+android: $android,
+apple: $apple,
+deviantart: $deviantart,
+discord: $discord,
+dribbble: $dribbble,
+facebook: $facebook,
+fivehundredpx: $fivehundredpx,
+flickrblue: $flickrblue,
+flickrpink: $flickrpink,
+foursquareblue: $foursquareblue,
+foursquarenavy: $foursquarenavy,
+foursquarepink: $foursquarepink,
+googleblue: $googleblue,
+googlegreen: $googlegreen,
+googleplus: $googleplus,
+googlered: $googlered,
+googleyellow: $googleyellow,
+instagramblue: $instagramblue,
+instagrammagenta: $instagrammagenta,
+instagramorange: $instagramorange,
+instagrampurple: $instagrampurple,
+instagramyellow: $instagramyellow,
+linkedin: $linkedin,
+listlyblue: $listlyblue,
+listlyorange: $listlyorange,
+medium: $medium,
+microsoftblue: $microsoftblue,
+microsoftgreen: $microsoftgreen,
+microsoftred: $microsoftred,
+microsoftyellow: $microsoftyellow,
+periscope: $periscope,
+pinterest: $pinterest,
+pocket: $pocket,
+quora: $quora,
+quorablue: $quorablue,
+reddit: $reddit,
+skypeblue: $skypeblue,
+skypedkblue: $skypedkblue,
+slackgreenblue: $slackgreenblue,
+slackmosss: $slackmosss,
+slackolive: $slackolive,
+slackpink: $slackpink,
+slackpurple: $slackpurple,
+slackred: $slackred,
+slackskyblue: $slackskyblue,
+slackviolet: $slackviolet,
+slackyellow: $slackyellow,
+slideshareblue: $slideshareblue,
+slideshareorange: $slideshareorange,
+snapchat: $snapchat,
+soundcloud: $soundcloud,
+spotifydarkgreen: $spotifydarkgreen,
+spotifygreen: $spotifygreen,
+steam: $steam,
+stumbleupon: $stumbleupon,
+swarm: $swarm,
+tumblr: $tumblr,
+twitter: $twitter,
+vimeoblue: $vimeoblue,
+vine: $vine,
+vk: $vk,
+whatsappgreen: $whatsappgreen,
+whatsappteal1: $whatsappteal1,
+whatsappteal2: $whatsappteal2,
+yahoo: $yahoo,
+youtube: $youtube
+);
+
+
