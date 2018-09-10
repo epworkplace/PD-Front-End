@@ -118,7 +118,38 @@ input:focus { outline: none; }
 
 .animated-button.btn-open figure.gooey-btn a#icon5 { bottom: 253px !important; }
 
-/* #icon2, #icon3, #icon4, #icon5 { position: absolute; right: 50%; bottom: 0px; z-index: 11; transition: bottom 0.3s ease-out; } .top2 { bottom: 75px !important; right: 0; } .top3 { bottom: 133px !important; right: 0; } .top4 { bottom: 193px !important; right: 0; } .top5 { bottom: 253px !important; right: 0; } .animated-button .gooey-btn { position: relative; z-index: 111; } */
+/* #icon2, #icon3, #icon4, #icon5 {
+    position: absolute;
+    right: 50%;
+    bottom: 0px;
+    z-index: 11;
+    transition: bottom 0.3s ease-out;
+}
+
+.top2 {
+    bottom: 75px !important;
+    right: 0;
+}
+
+.top3 {
+    bottom: 133px !important;
+    right: 0;
+}
+
+.top4 {
+    bottom: 193px !important;
+    right: 0;
+}
+
+.top5 {
+    bottom: 253px !important;
+    right: 0;
+}
+
+.animated-button .gooey-btn {
+  position: relative;
+  z-index: 111;
+} */
 .diff-view #receprionnees #allView { overflow-x: hidden; overflow-y: hidden; }
 
 /*  preview modal and its carousel styling */
@@ -237,7 +268,10 @@ input:focus { outline: none; }
 
 .list-content .viewChange .glphyicon-th { color: green; font-size: 23px; }
 
-/* .modal-zindex { z-index: 11111; top: 90px; } */
+/* .modal-zindex {
+    z-index: 11111;
+    top: 90px;
+} */
 .gly { font-size: 22px; color: green; top: -13px; }
 
 .modal-high { height: 100%; }

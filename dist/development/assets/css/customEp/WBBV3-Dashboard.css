@@ -188,7 +188,10 @@ input:focus { outline: none; }
 
 .item-footer .container-box .envo-pos { top: 10px; position: relative; }
 
-/*.item-footer .container-box textarea{ display: inline-block; width: 200px; }*/
+/*.item-footer .container-box textarea{
+    display: inline-block;
+    width: 200px;
+}*/
 /* not to flikr modal */
 #preview_modal .modal-content .carousel { min-height: 650px; }
 
@@ -234,7 +237,10 @@ input:focus { outline: none; }
 
 .list-content .viewChange .glphyicon-th { color: green; font-size: 23px; }
 
-/* .modal-zindex { z-index: 11111; top: 90px; } */
+/* .modal-zindex {
+  z-index: 11111;
+  top: 90px;
+} */
 .gly { font-size: 22px; color: green; top: -13px; }
 
 .modal-high { height: 100%; }
@@ -452,7 +458,15 @@ input:focus { outline: none; }
 
 .user_group .euro-group .group-1 .end-user { font-size: 22px; border: 1px solid black; padding: 10px; border-radius: 50%; }
 
-/*.user_group .permission .perm { font-weight: bold; font-size: 16px; padding-left: 9px; color: #03A9F4; font-family: verdana; } */
+/*.user_group .permission .perm {
+
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 9px;
+    color: #03A9F4;
+    font-family: verdana;
+    }
+*/
 .tab-content .chart-description .chart-heading { font: bold 15px verdana; color: #333; }
 
 /* VSCNF homepage traduction B2C */
