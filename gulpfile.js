@@ -1,4 +1,5 @@
-/*jshint esversion: 6*/
+/* eslint-disable */
+/* jshint esversion: 6 */
 
 // Include gulp and plugins
 var
@@ -24,7 +25,7 @@ var
     html = {
         partials: [source + '_partials/**/*'],
         in : [source + '*.html'],
-        watch: ['assets/*.html', 'assets/_partials/**/*'],
+        watch: ['./assets/*.html', './assets/_partials/**/*'],
         out: dest,
         context: {
             devBuild: devBuild,
@@ -117,6 +118,8 @@ gulp.task('clean-jslib', function(cb) {
     dest + 'assets/lib/**/*'
   ], cb());
 });
+
+gulp.task("reload", (done) => { browserSync.reload(); done(); });
 
 // build HTML files
 gulp.task('html', function() {
@@ -317,7 +320,7 @@ var exec = require('child_process').exec;
 gulp.task('watch', gulp.parallel('serve', function watchingChanges() {
 
     // html changes
-    gulp.watch([html.watch], gulp.series('html',reload));
+    gulp.watch([source + '**/*.html'], gulp.series('html','reload'));
 
     // image changes
     gulp.watch(images.in, gulp.series('images'));
@@ -341,10 +344,10 @@ gulp.task('watch', gulp.parallel('serve', function watchingChanges() {
     // }));
 
     // javascript changes
-    gulp.watch(js.in, gulp.series('js', reload));
+    gulp.watch(js.in, gulp.series('js', 'reload'));
 
     // javascript libraries changes
-    gulp.watch(jsLibs.in, gulp.series('jslib', reload));
+    gulp.watch(jsLibs.in, gulp.series('jslib', 'reload'));
 }));
 
 // default task

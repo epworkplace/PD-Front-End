@@ -630,6 +630,14 @@ button.modal-confirm { border: 1px solid #e60064; color: #e60064; background: tr
 
 button.modal-confirm:hover, button.modal-confirm:focus { background: #e60064; box-shadow: 0 0 20px #ccc; }
 
+/* Validaion modal styles starts */
+.validation-modal .modal-footer ul.form-actions { display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; list-style-type: none; justify-content: flex-end; margin: 0; padding: 0; }
+
+.validation-modal .modal-footer ul.form-actions li { display: -webkit-inline-flex; display: -moz-inline-flex; display: -ms-inline-flex; display: -o-inline-flex; display: inline-flex; margin-right: 10px; }
+
+.validation-modal .modal-footer ul.form-actions li:last-child { margin-right: 0; }
+
+/* Validaion modal styles ends */
 @media (max-width: 1290px) { #redaction .chart-description, .chart-description { top: 0 !important; } }
 
 @media (max-width: 768px) { #redaction .chart-description, .chart-description { top: -70px !important; } }
