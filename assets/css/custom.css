@@ -3,117 +3,10 @@
  * Apply your custom CSS here
  *
 */
-/* font Colors */
-/* Background-colors */
-/* highligh colors */
-/* dividers */
-/* border colors */
-/* Ranking colors */
-/** Sass Variables Social Media Brand Colors */
-/* helper utility styles */
-.helper-text {
-  font-size: 12px;
-  color: #B0B4BB;
-  font-weight: 400;
-}
 
-.helper-text.text-01 {
-  font-size: 14px;
-}
+@import 'variables';
 
-.helper-text.text-02 {
-  font-size: 13px;
-}
-
-.helper-text.text-03 {
-  font-size: 11px;
-}
-
-.helper-text.text-04 {
-  font-size: 10px;
-}
-
-.helper-text [class$='by'] {
-  font-weight: 600;
-}
-
-/* .remove, .delete { color: $delete; } */
-.main-font {
-  font-size: 14px;
-  color: #353F53;
-  font-weight: 600;
-}
-
-.ln100 {
-  line-height: 100% !important;
-}
-
-.fw-normal {
-  font-weight: normal !important;
-}
-
-.fw600 {
-  font-weight: 600 !important;
-}
-
-.fw700 {
-  font-weight: 700 !important;
-}
-
-.text-none {
-  text-transform: none !important;
-}
-
-.primary-font {
-  font-size: 14px;
-  color: #485262;
-}
-
-.sec-title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #353F53;
-}
-
-/* Text color styles */
-.error-text {
-  color: #ee0a5f !important;
-}
-
-.warning-text {
-  color: #FF6F00 !important;
-}
-
-/* .modal{ .alert-success, .alert-info, .alert-warning, .alert-danger{ color: #ffffff !important; } } */
-.df-ac {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  align-items: center;
-}
-
-.df-ac-jc {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.full-width {
-  width: 100% !important;
-}
-
-.auto-width {
-  width: auto !important;
-}
-
-.auto-height {
-  height: auto !important;
-}
+@import 'utilities/helper';
 
 html {
   font-size: 1rem;
@@ -129,6 +22,7 @@ body {
 }
 
 /* orginal was 280px */
+
 .pull_right_margin {
   margin-right: 2%;
 }
@@ -148,8 +42,10 @@ body {
   margin: 0;
 }
 
-.mail-pagination > .pager li > a, .mail-pagination > .pager li > span {
-  padding: 0px 8px;
+.mail-pagination > .pager li > {
+  a, span {
+    padding: 0px 8px;
+  }
 }
 
 .user-info-navbar .user-info-menu > li .dropdown-menu.user-profile-menu li a, .navbar.horizontal-menu .navbar-inner > .nav > li .dropdown-menu.user-profile-menu li a {
@@ -157,6 +53,7 @@ body {
 }
 
 /* .sidebar-menu .main-menu a { text-transform: uppercase; } */
+
 .sidebar-menu .main-menu {
   padding-left: 10px;
   padding-right: 10px;
@@ -171,11 +68,11 @@ body {
 
 .page-container .main-content .page-title {
   padding: 10px 0px;
-}
 
-.page-container .main-content .page-title .title-env .title {
-  margin: 0px;
-  font-size: 20px;
+  .title-env .title {
+    margin: 0px;
+    font-size: 20px;
+  }
 }
 
 .user-name {
@@ -195,55 +92,48 @@ body {
 / .modal-dialog { width: 100%; height: 100%; margin: 0; top: 0px; padding: 90px 0; z-index: 1041; }
 
 .modal-dialog .modal-content { width: 900px; margin: 0 auto 90px; } */
+
 .modal {
   text-align: center;
   padding: 0 !important;
-}
 
-.modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px;
-}
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
 
-.modal .modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-  top: 0px;
-  z-index: 1041;
-}
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    top: 0px;
+    z-index: 1041;
 
-.modal .modal-body {
-  max-height: 70vh;
-  overflow-y: auto;
-}
+    .close.modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
 
-.modal .modal-dialog .close.modal-close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
+    &.modal-full {
+      width: 98%;
 
-.modal .modal-dialog.modal-xl {
-  width: 1024px;
-}
+      .modal-content {
+        border-radius: 0;
+      }
+    }
 
-.modal .modal-dialog.modal-full {
-  width: 98%;
+    .modal-body {
+      /* height: 70vh;
+      overflow-y: auto; */
+    }
+  }
 }
 
 .datatable-scroll {
   width: 100%;
   overflow-x: auto;
-}
-
-tr {
-  border: 1px solid #ccc;
-}
-
-.bg-lightgrey {
-  background: #eee;
 }
