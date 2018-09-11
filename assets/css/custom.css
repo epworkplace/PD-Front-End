@@ -122,8 +122,12 @@ body {
       width: 98%;
 
       .modal-content {
-        border-radius: 0;
+        /* border-radius: 0; */
       }
+    }
+
+    &.modal-xl {
+      width: 1024px;
     }
 
     .modal-body {
@@ -131,6 +135,14 @@ body {
       overflow-y: auto; */
     }
   }
+}
+
+.bg-lightgrey {
+  background: #eee;
+}
+
+tr {
+  border: 1px solid #ccc;
 }
 
 .datatable-scroll {

@@ -111,8 +111,14 @@ body { font-size: calc((14 / 16) * 1rem); }
 
 .modal .modal-dialog.modal-full { width: 98%; }
 
-.modal .modal-dialog.modal-full .modal-content { border-radius: 0; }
+.modal .modal-dialog.modal-full .modal-content { /* border-radius: 0; */ }
+
+.modal .modal-dialog.modal-xl { width: 1024px; }
 
 .modal .modal-dialog .modal-body { /* height: 70vh; overflow-y: auto; */ }
+
+.bg-lightgrey { background: #eee; }
+
+tr { border: 1px solid #ccc; }
 
 .datatable-scroll { width: 100%; overflow-x: auto; }
