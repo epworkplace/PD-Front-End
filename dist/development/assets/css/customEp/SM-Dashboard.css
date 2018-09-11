@@ -130,7 +130,56 @@ input:focus { outline: none; }
 
 .animated-button.btn-open figure.gooey-btn a#icon5 { bottom: 253px !important; }
 
-/* .animated-button { position: fixed; bottom: 32px; right: 52px; z-index: 1000; } #icon2, #icon3, #icon4, #icon5 { position: absolute; right: 9px; bottom: 7px; z-index: 11; transition: bottom 1s ease-out; } .animated-button a { padding: 17px 17px; font-size: 18px; border-radius: 50%; background: #f59393; color: #fff; display: inline-block; box-shadow: 0 0 20px #ddd; } #icon1 { padding: 16px 21px; font-size: 20px; } .top2 { bottom: 75px !important; } .top3 { bottom: 133px !important; } .top4 { bottom: 193px !important; } .top5 { bottom: 253px !important; } .animated-button .gooey-btn { position: relative; z-index: 111; } */
+/* .animated-button {
+  position: fixed;
+  bottom: 32px;
+  right: 52px;
+  z-index: 1000;
+}
+
+#icon2, #icon3, #icon4, #icon5 {
+  position: absolute;
+  right: 9px;
+  bottom: 7px;
+  z-index: 11;
+  transition: bottom 1s ease-out;
+}
+
+.animated-button a {
+  padding: 17px 17px;
+  font-size: 18px;
+  border-radius: 50%;
+  background: #f59393;
+  color: #fff;
+  display: inline-block;
+  box-shadow: 0 0 20px #ddd;
+}
+
+#icon1 {
+  padding: 16px 21px;
+  font-size: 20px;
+}
+
+.top2 {
+  bottom: 75px !important;
+}
+
+.top3 {
+  bottom: 133px !important;
+}
+
+.top4 {
+  bottom: 193px !important;
+}
+
+.top5 {
+  bottom: 253px !important;
+}
+
+.animated-button .gooey-btn {
+  position: relative;
+  z-index: 111;
+} */
 .diff-view #receprionnees #allView { overflow-x: hidden; overflow-y: hidden; }
 
 /*  preview modal and its carousel styling */
@@ -177,7 +226,10 @@ input:focus { outline: none; }
 
 .item-footer .container-box .envo-pos { top: 10px; position: relative; }
 
-/*.item-footer .container-box textarea{ display: inline-block; width: 200px; }*/
+/*.item-footer .container-box textarea{
+    display: inline-block;
+    width: 200px;
+}*/
 /* not to flikr modal */
 #preview_modal .modal-content .carousel { min-height: 650px; }
 

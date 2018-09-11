@@ -4,9 +4,9 @@
  *
 */
 
-@import "variables";
+@import 'variables';
 
-@import "utilities/helper";
+@import 'utilities/helper';
 
 html {
   font-size: 1rem;
@@ -68,6 +68,7 @@ body {
 
 .page-container .main-content .page-title {
   padding: 10px 0px;
+
   .title-env .title {
     margin: 0px;
     font-size: 20px;
@@ -100,6 +101,7 @@ body {
 .modal {
   text-align: center;
   padding: 0 !important;
+
   &:before {
     content: '';
     display: inline-block;
@@ -107,26 +109,35 @@ body {
     vertical-align: middle;
     margin-right: -4px;
   }
+
   .modal-dialog {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
     top: 0px;
     z-index: 1041;
+
     .close.modal-close {
       position: absolute;
       top: 15px;
       right: 15px;
     }
+
     &.modal-full {
       width: 98%;
+
       .modal-content {
         // border-radius: 0;
       }
     }
-    .modal-body{
-        /* height: 70vh;
-        overflow-y: auto; */
+
+    &.modal-xl {
+      width: 1024px;
+    }
+
+    .modal-body {
+      /* height: 70vh;
+      overflow-y: auto; */
     }
   }
 }
@@ -160,3 +171,16 @@ body {
     }
 }
 /* Validaion modal styles ends */
+
+.bg-lightgrey {
+  background: #eee;
+}
+
+tr {
+  border: 1px solid #ccc;
+}
+
+.datatable-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
