@@ -124,7 +124,7 @@ gulp.task("reload", (done) => { browserSync.reload(); done(); });
 // build HTML files
 gulp.task('html', function() {
     var page = gulp.src(html.in)
-        // .pipe($.newer(html.out))
+        .pipe($.newer(html.out))
         .pipe($.preprocess({
             context: html.context
         }))

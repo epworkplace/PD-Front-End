@@ -95,6 +95,8 @@ body { font-size: calc((14 / 16) * 1rem); }
 / .modal-dialog { width: 100%; height: 100%; margin: 0; top: 0px; padding: 90px 0; z-index: 1041; }
 
 .modal-dialog .modal-content { width: 900px; margin: 0 auto 90px; } */
+.datatable-scroll { width: 100%; overflow-x: auto; }
+
 .modal { text-align: center; padding: 0 !important; }
 
 .modal:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -4px; }
@@ -105,8 +107,13 @@ body { font-size: calc((14 / 16) * 1rem); }
 
 .modal .modal-dialog.modal-full { width: 98%; }
 
-.modal .modal-dialog.modal-full .modal-content { border-radius: 0; }
-
 .modal .modal-dialog .modal-body { /* height: 70vh; overflow-y: auto; */ }
 
-.datatable-scroll { width: 100%; overflow-x: auto; }
+/* Validaion modal styles starts */
+.validation-modal .modal-footer ul.form-actions { display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; list-style-type: none; justify-content: flex-end; margin: 0; padding: 0; }
+
+.validation-modal .modal-footer ul.form-actions li { display: -webkit-inline-flex; display: -moz-inline-flex; display: -ms-inline-flex; display: -o-inline-flex; display: inline-flex; margin-right: 10px; }
+
+.validation-modal .modal-footer ul.form-actions li:last-child { margin-right: 0; }
+
+/* Validaion modal styles ends */

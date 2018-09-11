@@ -92,6 +92,11 @@ body {
 
 .modal-dialog .modal-content { width: 900px; margin: 0 auto 90px; } */
 
+.datatable-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .modal {
   text-align: center;
   padding: 0 !important;
@@ -116,7 +121,7 @@ body {
     &.modal-full {
       width: 98%;
       .modal-content {
-        border-radius: 0;
+        // border-radius: 0;
       }
     }
     .modal-body{
@@ -126,7 +131,32 @@ body {
   }
 }
 
-.datatable-scroll {
-  width: 100%;
-  overflow-x: auto;
+/* Validaion modal styles starts */
+.validation-modal{
+    .modal-footer{
+        ul.form-actions{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            list-style-type: none;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            li{
+                display: -webkit-inline-flex;
+                display: -moz-inline-flex;
+                display: -ms-inline-flex;
+                display: -o-inline-flex;
+                display: inline-flex;
+                // flex: 1;
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }
+/* Validaion modal styles ends */

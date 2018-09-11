@@ -1234,19 +1234,22 @@
 
 			<script type="text/javascript">
 
-            function showAjaxModal()
-            {
-                jQuery('#modal-7').modal('show', {backdrop: 'static'});
+            function showAjaxModal() {
+                jQuery('#modal-7').modal('show', {backdrop: 'static'})
+                    .on('shown.bs.modal', function(){
+                        $(this).setModalMaxHeight($(this));
+                    });
 
 
-				setTimeout(function()
-				{
+				setTimeout(function() {
 					jQuery.ajax({
 						url: "data/ajax-content.txt",
-						success: function(response)
-						{
+						success: function(response) {
 							jQuery('#modal-7 .modal-body').html(response);
-						}
+						},
+                        complete: function() {
+
+                        }
 					});
 				}, 800); // just an example
 			}
@@ -1890,13 +1893,40 @@
 
 <script>
     $(document).ready(function() {
+
+        $.fn.extend({
+            setModalMaxHeight : function(elem) {
+                this.$element = $(elem);
+                this.$content = this.$element.find('.modal-content');
+                var borderWidth = this.$content.outerHeight() - this.$content.innerHeight();
+                var dialogMargin = $(window).width() < 768 ? 20 : 60;
+                var contentHeight = $(window).height() - (dialogMargin + borderWidth);
+                var headerHeight = this.$element.find('.modal-header').outerHeight() || 0;
+                var footerHeight = this.$element.find('.modal-footer').outerHeight() || 0;
+                var maxHeight = contentHeight - (headerHeight + footerHeight + 60);
+
+                this.$content.css({
+                    'overflow': 'hidden'
+                });
+
+                this.$element
+                    .find('.modal-body').css({
+                        'max-height': maxHeight,
+                        'overflow-y': 'auto'
+                    });
+                console.log(headerHeight, maxHeight, footerHeight);
+            }
+        });
+
+
         $('.modal-body').change(
             function() {console.log('something'); // ?
         });
         $('#mdoal5').on('click', function(){
             console.log('Testing before modal shown');
-            $('#modal-5').modal('show', function(){
-                console.log("Testing..");
+            $('#modal-5').modal('show').on('shown.bs.modal', function(){
+                var that = $(this);
+                $(this).setModalMaxHeight($(that));
             });
         });
     });
