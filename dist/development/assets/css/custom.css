@@ -141,3 +141,7 @@ tr { border: 1px solid #ccc; }
 .homepage-porter ul.nav-tabs.custo li { margin-left: 0 !important; }
 
 .homepage-porter ul.nav-tabs.custo li a { padding-left: 20px !important; padding-right: 20px !important; }
+
+.alert { word-wrap: break-word; color: #555 !important; }
+
+.alert p { color: #555 !important; }

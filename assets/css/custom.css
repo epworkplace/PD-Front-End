@@ -225,3 +225,12 @@ tr {
     }
   }
 }
+
+.alert {
+  word-wrap: break-word;
+  color: #555 !important;
+
+  p {
+    color: #555 !important;
+  }
+}
