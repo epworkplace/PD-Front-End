@@ -180,9 +180,11 @@ input:focus { outline: none; }
 
 #productHavModal .prod-info .tab-content #similarProducts tr:hover { cursor: pointer; }
 
-.carousel.slide { width: calc(100% - 5%); max-height: 350px; }
+.carousel.slide { width: calc(100% - 5%); max-height: 350px; text-align: center; }
 
-.carousel.slide .productImage { max-height: 320px; }
+.carousel.slide .productImage { max-height: 320px; text-align: center; vertical-align: middle; height: 320px; }
+
+.carousel.slide .carousel-inner .item { text-align: center; }
 
 .carousel.slide .carousel-control .glyphicon { color: #c1c1c1; }
 

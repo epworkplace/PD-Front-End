@@ -3,6 +3,10 @@
  * Apply your custom CSS here
  *
 */
+/* Xenon theme overrides */
+.page-container .main-content { word-break: unset; }
+
+/* Xenon theme overrides ends */
 /* font Colors */
 /* Background-colors */
 /* highligh colors */
@@ -23,9 +27,7 @@
 
 .helper-text [class$='by'] { font-weight: 600; }
 
-/* .remove, .delete {
-  color: $delete;
-} */
+/* .remove, .delete { color: $delete; } */
 .main-font { font-size: 14px; color: #353F53; font-weight: 600; }
 
 .ln100 { line-height: 100% !important; }
@@ -47,11 +49,7 @@
 
 .warning-text { color: #FF6F00 !important; }
 
-/* .modal{
-  .alert-success, .alert-info, .alert-warning, .alert-danger{
-    color: #ffffff !important;
-  }
-} */
+/* .modal{ .alert-success, .alert-info, .alert-warning, .alert-danger{ color: #ffffff !important; } } */
 .df-ac { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; align-items: center; }
 
 .df-ac-jc { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; align-items: center; justify-content: center; }
@@ -113,13 +111,23 @@ body { font-size: calc((14 / 16) * 1rem); }
 
 .modal .modal-dialog { display: inline-block; text-align: left; vertical-align: middle; top: 0px; z-index: 1041; }
 
-.modal .modal-dialog .close.modal-close { position: absolute; top: 15px; right: 15px; }
+.modal .modal-dialog .close.modal-close { position: absolute; top: 15px; right: 15px; z-index: 1; }
 
 .modal .modal-dialog.modal-full { width: 98%; }
 
 .modal .modal-dialog.modal-xl { width: 1024px; }
 
 .modal .modal-dialog .modal-body { /* height: 70vh; overflow-y: auto; */ }
+
+.reject_reason_modal { position: fixed; top: 0; bottom: 0; right: 0; left: 0; }
+
+.reject_reason_modal .rejection-content { padding: 30px; background: #fff; border-radius: 6px; }
+
+.reject_reason_modal .rejection-content .rejection-header { margin: 0; padding: 0; border-bottom: 2px solid #e5e5e5; padding-bottom: 15px; }
+
+.reject_reason_modal .rejection-content .rejection-body { padding: 15px 0; }
+
+.reject_reason_modal .rejection-content .rejection-footer { padding: 0; padding-top: 15px; text-align: right; border-top: 1px solid #e5e5e5; }
 
 /* Validaion modal styles starts */
 .validation-modal .modal-footer ul.form-actions { display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; list-style-type: none; justify-content: flex-end; margin: 0; padding: 0; }

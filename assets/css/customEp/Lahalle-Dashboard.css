@@ -537,8 +537,17 @@ input:focus {
     &.slide {
         width: calc(100% - 5%);
         max-height: 350px;
+        text-align: center;
         .productImage {
             max-height: 320px;
+            text-align: center;
+            vertical-align: middle;
+            height: 320px;
+        }
+        .carousel-inner{
+            .item{
+                text-align: center;
+            }
         }
         .carousel-control{
             .glyphicon{

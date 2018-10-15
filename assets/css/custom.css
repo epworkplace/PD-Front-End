@@ -4,6 +4,15 @@
  *
 */
 
+/* Xenon theme overrides */
+.page-container {
+    .main-content{
+        word-break: unset;
+    }
+}
+
+/* Xenon theme overrides ends */
+
 @import 'variables';
 
 @import 'utilities/helper';
@@ -135,6 +144,7 @@ body {
       position: absolute;
       top: 15px;
       right: 15px;
+      z-index: 1;
     }
 
     &.modal-full {
@@ -155,6 +165,34 @@ body {
       overflow-y: auto; */
     }
   }
+}
+
+.reject_reason_modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .rejection-content{
+        padding: 30px;
+        background: #fff;
+        border-radius: 6px;
+        .rejection-header{
+            margin: 0;
+            padding: 0;
+            border-bottom: 2px solid #e5e5e5;
+            padding-bottom: 15px;
+        }
+        .rejection-body{
+            padding: 15px 0;
+        }
+        .rejection-footer{
+            padding: 0;
+            padding-top: 15px;
+            text-align: right;
+            border-top: 1px solid #e5e5e5;
+        }
+    }
 }
 
 /* Validaion modal styles starts */

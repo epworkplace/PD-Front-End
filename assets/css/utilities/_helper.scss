@@ -142,8 +142,12 @@
 
 .auto-width {
   width: auto !important;
+  min-width: unset;
+  max-width: unset;
 }
 
 .auto-height {
   height: auto !important;
+  min-height: unset;
+  max-height: unset;
 }
